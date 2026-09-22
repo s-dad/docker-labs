@@ -1,6 +1,6 @@
 # 🐳 docker-labs
 
-Docker labs documenting hands-on Docker practice 
+Lab journal documenting Docker work commands, troubleshooting, and lessons learned.
 
 ---
 
@@ -48,4 +48,3 @@ docker ps -a
 docker container prune
 ```
 
-Updated weekly as labs are completed.
