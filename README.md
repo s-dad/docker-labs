@@ -19,8 +19,8 @@ Lab journal documenting Docker work commands, troubleshooting, and lessons learn
 
 ## 📁 Labs
 
-| Lab | Topic | Status |
-|------|-------|--------|
+| Lab | Topic |
+|------|-------|
 | [Lab 01](./week-01/) | Build Docker Interactive Image & Linux Docker Images  |
 | [Lab 02](./week-02/) | Build a Private Docker Registry (Windows – No SSL) & Image Tagging  |
 | [Lab 03](./week-03/) | Docker Private Registry with Basic Authentication & Docker Storage |
