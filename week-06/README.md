@@ -137,9 +137,9 @@ All three nodes showing `Ready` confirmed the swarm was operational.
 
 ## What I Learned
 
-- Docker Swarm turns multiple Docker hosts into a single cluster — a manager coordinates workloads and workers execute them
+- Docker Swarm turns multiple Docker hosts into a single cluster a manager coordinates workloads and workers execute them
 - Docker-in-Docker (`dind`) lets each container run its own Docker daemon, which makes it possible to simulate a multi-node swarm on a single machine
-- `--advertise-addr` tells the swarm which IP other nodes should use to reach the manager — using the container's IP on `swarm_net` rather than the host IP is what makes intra-container communication work
-- The join token is scoped — worker tokens and manager tokens are different; using the wrong one changes a node's role
-- Staying aware of which shell context is active matters — running a swarm join command from the host PowerShell prompt instead of inside a worker container silently adds the wrong node to the cluster
-- `docker node ls` must be run from the manager — workers have no visibility into cluster state
+- `--advertise-addr` tells the swarm which IP other nodes should use to reach the manager  using the container's IP on `swarm_net` rather than the host IP is what makes intra-container communication work
+- The join token is scoped worker tokens and manager tokens are different; using the wrong one changes a node's role
+- Staying aware of which shell context is active matters  running a swarm join command from the host PowerShell prompt instead of inside a worker container silently adds the wrong node to the cluster
+- `docker node ls` must be run from the manager workers have no visibility into cluster state

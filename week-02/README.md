@@ -167,13 +167,13 @@ All three repositories returned — private registry confirmed operational.
 
 ---
 
-## 💡 What I Learned
+##  What I Learned
 
-- A private registry lets you store images locally without pushing to Docker Hub — useful for sensitive or internal images
-- `--restart always` is important for services like a registry — it keeps them running across reboots without manual intervention
-- Docker blocks HTTP registries by default — `insecure-registries` in `daemon.json` is required for local non-SSL setups
-- Image tagging with a registry prefix tells Docker where to push — `localhost:5000/myimage` vs `safiao/myimage`
+- A private registry lets you store images locally without pushing to Docker Hub  useful for sensitive or internal images
+- `--restart always` is important for services like a registry it keeps them running across reboots without manual intervention
+- Docker blocks HTTP registries by default  `insecure-registries` in `daemon.json` is required for local non-SSL setups
+- Image tagging with a registry prefix tells Docker where to push  `localhost:5000/myimage` vs `safiao/myimage`
 - Layer digests in push output confirm each layer was stored successfully
 - The Docker Registry API `/v2/_catalog` is a quick way to verify what images are stored in a registry
-- VirtualBox on Windows 11 Home is resource-heavy — limiting VM RAM and closing background apps helps with stability
-- Always restart the Docker daemon after editing `daemon.json` — changes do not apply until restart
+- VirtualBox on Windows 11 Home is resource-heavy limiting VM RAM and closing background apps helps with stability
+- Always restart the Docker daemon after editing `daemon.json` changes do not apply until restart

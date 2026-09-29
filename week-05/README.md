@@ -187,6 +187,6 @@ still there, confirming the volume preserved data across container recreation.
 
 - Docker Compose treats a multi-container app as a single system defined in one file rather than a set of individually managed containers
 - `depends_on` controls start order but Compose also handles retry logic so WordPress waits for MySQL to be ready without manual intervention
-- Service names act as stable DNS hostnames within a Compose network — using `db` instead of an IP address means the connection survives container restarts
-- Named volumes persist database data independently of container lifecycles — `docker-compose down` removes containers but not volumes
-- The `docker-compose.yml` file is a reproducible contract for the entire application stack — the same file rebuilds the identical environment anywhere Docker is installed
+- Service names act as stable DNS hostnames within a Compose network using `db` instead of an IP address means the connection survives container restarts
+- Named volumes persist database data independently of container lifecycles  `docker-compose down` removes containers but not volumes
+- The `docker-compose.yml` file is a reproducible contract for the entire application stack  the same file rebuilds the identical environment anywhere Docker is installed

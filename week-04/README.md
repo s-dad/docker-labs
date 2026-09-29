@@ -309,10 +309,10 @@ docker stop web-exposed && docker rm web-exposed
 
 ## What I Learned
 
-- SSL/TLS adds a transport encryption layer on top of basic auth — the registry now encrypts traffic in addition to requiring credentials
-- Self-signed certificates require adding the registry host to `insecure-registries` in `daemon.json`; Docker blocks untrusted certificates by default
-- A `400` error from the registry indicates a daemon trust configuration issue; a `401` indicates a credentials issue — useful for narrowing down what to fix
-- `$(pwd)` volume mounts on Linux are directory-sensitive — the command must run from the correct working directory
+- SSL/TLS adds a transport encryption layer on top of basic auth the registry now encrypts traffic in addition to requiring credentials
+- Self-signed certificates require adding the registry host to `insecure-registries` in `daemon.json`Docker blocks untrusted certificates by default
+- A `400` error from the registry indicates a daemon trust configuration issue; a `401` indicates a credentials issue  useful for narrowing down what to fix
+- `$(pwd)` volume mounts on Linux are directory-sensitive  the command must run from the correct working directory
 - The default bridge network supports IP-based communication only; custom bridge networks add DNS so containers can resolve each other by name
 - Host networking works fully on Linux but is limited on Windows because containers run inside WSL2, not directly on the Windows network stack
 - Port mapping (`-p host:container`) is the correct way to expose container services on Windows

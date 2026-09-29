@@ -277,6 +277,6 @@ Remove-Item -Recurse -Force C:\temp\dockerfun
 
 - Basic authentication adds a credential layer to a private registry but is not production-ready without SSL, covered in Lab 6A
 - On Linux, `htpasswd` is available via `apache2-utils`; on Windows, the `httpd:2` Docker image is required as a workaround
-- Docker volumes are managed by Docker and persist across container lifecycles — the preferred method for production storage
-- Bind mounts create a direct, real-time link between a host directory and a container — ideal for development workflows
+- Docker volumes are managed by Docker and persist across container lifecycles  the preferred method for production storage
+- Bind mounts create a direct, real-time link between a host directory and a container ideal for development workflows
 - Volumes and bind mounts serve different purposes: volumes for durable persistence, bind mounts for live host-container file sharing

@@ -211,13 +211,13 @@ Confirms the image was pushed successfully and is publicly accessible.
 
 ---
 
-## 💡 What I Learned
+##  What I Learned
 
 - `docker run -it` drops you into a live container just like SSHing into a Linux machine
 - `apt-get update` must run before installing anything — skipping it causes package not found errors
-- `docker diff` shows every file the container touched compared to the base image — useful for auditing what an install actually does
-- `docker commit` saves container changes as a new image but Dockerfiles are the better approach — repeatable and version-controlled
-- Minimal base images like `ubuntu` have no dialog frontend — the `debconf` warnings during install are harmless
-- Always tag images before pushing to Docker Hub — `docker tag <image> safiao/<image>:latest`
+- `docker diff` shows every file the container touched compared to the base image useful for auditing what an install actually does
+- `docker commit` saves container changes as a new image but Dockerfiles are the better approach  repeatable and version-controlled
+- Minimal base images like `ubuntu` have no dialog frontend  the `debconf` warnings during install are harmless
+- Always tag images before pushing to Docker Hub  `docker tag <image> safiao/<image>:latest`
 - Port mapping with `-p 80:80` is what makes a containerized app reachable from outside
 - Avoid exposing port 80 in production environments
